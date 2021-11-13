@@ -66,6 +66,21 @@ let viewModel4 = Vue.createApp({
     }
 })
 
+
+let viewModel5 = Vue.createApp({})
+
+viewModel5.component(
+    'custom-component',
+    {
+        template: `<h5>{{info}}</h5>`,
+        data() {
+            return {
+                info: 'Custom component info'
+            }
+        }
+    }
+)
+
 // Mount App #1 immediately; unmount in 12s
 viewModel1.mount('#app1')
 setTimeout(() => viewModel1.unmount(), 12000)
@@ -78,3 +93,6 @@ setTimeout(() => viewModel3.mount('#app3'), 3000)
 
 // Mount App #4 in 5s
 setTimeout(() => viewModel4.mount('#app4'), 5000)
+
+// Mount App #5 in 7s
+setTimeout(() => viewModel5.mount('#app5'), 7000)
