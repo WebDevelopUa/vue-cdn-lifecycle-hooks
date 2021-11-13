@@ -18,7 +18,7 @@ Demo: [GitHub Pages](https://webdevelopua.github.io/vue-cdn-lifecycle-hooks/)
 2) Init data & methods
 3) Instance created
     - ***created Hook***
-4) Compile template (el property)
+4) Compile Template (el property) - [String HTML => JS Object] - ***Virtual DOM (is a JS Object, copy of actual DOM)***
     - ***beforeMount Hook***
 5) Replace el property with compiled template
 6) **MOUNTED** #1
@@ -32,3 +32,6 @@ Demo: [GitHub Pages](https://webdevelopua.github.io/vue-cdn-lifecycle-hooks/)
 11) Vue instance destroyed
     - ***unmounted Hook***
  
+----
+
+## [Vue builds](https://ru.vuejs.org/v2/guide/installation.html#%D0%9E%D0%B1%D1%8A%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D1%85-%D1%81%D0%B1%D0%BE%D1%80%D0%BE%D0%BA)

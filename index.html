@@ -20,6 +20,7 @@
 <div id="app1">
     <label>
         <input type="text"
+               size="50"
                v-model="message"
                placeholder="{{message}}"
         >
@@ -31,8 +32,30 @@
     {{ message }}
 </div>
 
+<br/>
+<hr/>
+<br/>
+
+<div id="app3">
+    String interpolation template.
+</div>
+
+<br/>
+<hr/>
+<br/>
+
+<div id="app4">
+    Not compiled template; using Vue runtime version.
+</div>
+
+
+<!-- Vue global is a full build (compiler + runtime) -->
 <!--<script src="https://unpkg.com/vue@next"></script>-->
 <script src="https://unpkg.com/vue@3.2.21/dist/vue.global.js"></script>
+
+<!-- Vue runtime (without compiler) -->
+<!--<script src="https://unpkg.com/vue@3.2.21/dist/vue.runtime.global.js"></script>-->
+
 <script src="app.js"></script>
 </body>
 
